@@ -154,6 +154,7 @@ main {
                 text-align: center;
                 background-color: var(--base-color-blue);
                 color: var(--base-color-white);
+                cursor: pointer;
                 &:nth-child(2){
                     background-color: var(--base-color-white);
                     color: var(--base-color-blue);
