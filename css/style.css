@@ -54,7 +54,7 @@ main {
         height: 1110px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: column;
         padding: 40px;
         gap: 40px;
