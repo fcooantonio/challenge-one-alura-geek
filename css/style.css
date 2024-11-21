@@ -29,3 +29,86 @@ header {
     }
 }
 
+main {
+    width: 100%;
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 40px;
+        gap: 70px;
+    }
+    & section {
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        & ul {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            box-shadow: -12px 10px 5.8px 0px #00000040;
+            & li {
+                width: 196px;
+                height: 258px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                padding: 10px;
+                gap: 10px;
+                background-color: var(--primary-color-green);
+                color: var(--base-color-white);
+                border-radius: 10px;
+                border: 3px solid var(--base-color-black);
+                box-shadow: -5px 6px 3.3px 0px #00000040;
+                & img {
+                    width: 176px;
+                    min-height: 174px;
+                    border-radius: 10px;
+                    border: 3px solid var(--base-color-black);
+                }
+                & p {
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 19.5px;
+                    text-align: left;
+                }
+                & div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    & p {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 20.8px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    & form {
+        display: flex;
+        & h2 {
+            width: 300px;
+        }
+    }
+    & h2 {
+        font-family: var(--base-font-press-start-2p);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+    }
+}
