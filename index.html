@@ -22,11 +22,11 @@
                 
                 </ul>
             </section>
-            <form action="" method="post">
+            <form action="" method="post" data-formulario>
                 <h2>ADICIONAR PRODUTO:</h2>
-                <input type="text" name="nome" id="nome-produto" placeholder="nome...">
-                <input type="number" name="valor" id="valor-produto" placeholder="valor...">
-                <input type="url" name="imagem" id="imagem-prduto" placeholder="imagem...">
+                <input type="text" name="nome" id="nome-produto" data-nome placeholder="nome...">
+                <input type="number" name="preco" id="preco-produto" data-preco placeholder="valor...">
+                <input type="url" name="imagem" id="imagem-produto" data-imagem placeholder="imagem...">
                 <div>
                     <button type="submit">Guardar</button>
                     <button type="reset">Limpar</button>
@@ -41,6 +41,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="./js/listarProdutos.js" type="module"></script>
+    <script type="module" src="./js/listarProdutos.js" ></script>
+    <script type="module" src="./js/adicionarProduto.js"></script>
 </body>
 </html>
