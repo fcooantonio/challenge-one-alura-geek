@@ -13,12 +13,6 @@
       "id": 2
     },
     {
-      "nome": "Produto 3",
-      "preco": 300,
-      "imagem": "https://placehold.co/174x176",
-      "id": 3
-    },
-    {
       "nome": "Produto 4",
       "preco": 400,
       "imagem": "https://placehold.co/174x176",
@@ -55,8 +49,8 @@
       "id": 9
     },
     {
-      "nome": "Produto 10",
-      "preco": "1000",
+      "nome": "Produto 3",
+      "preco": "300",
       "imagem": "https://placehold.co/174x176",
       "id": 10
     }

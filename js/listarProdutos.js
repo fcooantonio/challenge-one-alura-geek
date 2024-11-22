@@ -15,6 +15,20 @@ export default function constroiCard(nome, preco, imagem) {
     return produto;
 }
 
+async function deletarProduto() {
+    lista.addEventListener("click", async (evento) => {
+        const elementoClicado = evento.target;
+        const paiElementoClicado = elementoClicado.parentElement;
+        if (elementoClicado.tagName === "ION-ICON") {
+            const nomeProduto = paiElementoClicado.previousElementSibling.textContent;
+            const conexao = await conectaApi.listaProdutos();
+            const produto = conexao.find((elemento) => elemento.nome === nomeProduto);
+            await conectaApi.deletaProduto(produto.id);
+            paiElementoClicado.parentElement.remove();
+        }
+    });
+}
+
 async function listarProdutos() {
     try {
         const listaApi = await conectaApi.listaProdutos();
@@ -26,3 +40,4 @@ async function listarProdutos() {
 }
 
 listarProdutos();
+deletarProduto();
